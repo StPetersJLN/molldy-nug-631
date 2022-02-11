@@ -123,4 +123,13 @@ scene.setBackgroundImage(img`
 let mySprite = sprites.create(assets.image`myImage`, SpriteKind.Player)
 mySprite.setPosition(57, 93)
 let mySprite2 = sprites.create(assets.image`myImage4`, SpriteKind.Player)
-mySprite2.setPosition(77, 110)
+mySprite2.setPosition(92, 93)
+for (let index = 0; index < 4; index++) {
+    music.bigCrash.play()
+}
+animation.runImageAnimation(
+mySprite,
+assets.animation`myAnim0`,
+200,
+false
+)
